@@ -1,0 +1,47 @@
+### model
+model_name_or_path: t3ai-org/pt-model
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+deepspeed: examples/deepspeed/ds_z2_config.json
+lora_alpha: 32
+lora_dropout: 0
+lora_rank: 16
+use_rslora: true
+neftune_noise_alpha: 5 # openorca'da kullanmadik digerleri icin ekledim
+
+### dataset
+dataset: NusretOzates/function-calling-dataset
+template: alpaca_tr
+cutoff_len: 256
+overwrite_cache: true
+preprocessing_num_workers: 16
+packing: false # it was true for orca dataset, will be false for domain dataset.
+train_on_prompt: true # must be true for domain text, false for instruction tune
+
+### output
+output_dir: saves/teknofest-heavy-cleaned-v13/full/sft
+logging_steps: 50
+save_steps: 100
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-5
+num_train_epochs: 1
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 100000
+
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 8
+eval_strategy: steps
+eval_steps: 200
+

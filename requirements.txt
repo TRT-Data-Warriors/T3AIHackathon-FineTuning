@@ -1,0 +1,11 @@
+deepspeed
+torch
+transformers
+flash-attn
+xformers
+torchvision
+torchaudio
+uv
+pandas
+numpy
+streamlit
