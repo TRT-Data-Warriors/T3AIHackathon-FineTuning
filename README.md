@@ -16,6 +16,12 @@ Bu proje TEKNOFEST 2024 Antalya T3AI Hackathon Yarışması İnce Ayarlama Kateg
 
 ### Türk Hukuku
 - [Mevzuat](https://www.mevzuat.gov.tr/)
+- [Anayasa]https://www.anayasa.gov.tr/tr/anasayfa/
+- [Yargitay]https://karararama.yargitay.gov.tr/
+- [Danistay]https://karararama.danistay.gov.tr/
+- [Uyap]https://emsal.uyap.gov.tr/
+- [Blog]https://kulacoglu.av.tr/blog/ 
+- [Blog]https://www.gunesgunes.com/makaleler/
 ### Sürdürülebilirlik
 
 - [WIKIPEDIA]https://tr.wikipedia.org/wiki/S%C3%BCrd%C3%BCr%C3%BClebilirlik
